@@ -16,4 +16,3 @@ public class servletNotasyon extends HttpServlet {
 		PrintWriter yaz = response.getWriter();
 		yaz.write("Merhaba Servlet");	
 	}
-}
