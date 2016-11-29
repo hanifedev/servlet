@@ -12,7 +12,9 @@ public class HelloServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException
 	{
 		PrintWriter printWriter=response.getWriter();
-		String mesaj="Ilk deneme";
+		printWriter.write("<html><body>");
+		String mesaj="<h1>Ilk deneme</h1>";
 		printWriter.write(mesaj);
+		printWriter.write("</html></body>");
 	}
 }
